@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>線上測驗系統</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quizSection">
+            <h2>線上測驗</h2>
+            <div class="image-container">
+                <img src="./images/quiz-logo.png" alt="Quiz Logo" class="logo-image">
+            </div>
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+            <div id="questions"></div>
+            <button onclick="submitQuiz()" class="submit-btn">
+                <img src="./images/check-icon.png" alt="Submit" class="button-icon">
+                <span>提交答案</span>
+            </button>
+        </div>
+
+        <div id="resultSection" style="display: none;">
+            <h2>測驗結果</h2>
+            <div id="score" class="result-summary"></div>
+            <div id="analysis"></div>
+            <button onclick="resetQuiz()" class="reset-button">
+                <img src="./images/reset-icon.png" alt="Reset" class="button-icon">
+                <span>重新測驗</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
